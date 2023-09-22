@@ -1,2 +1,2 @@
 # sistemaveterinario
- sistema veterinario con php
+ sistema veterinario con HTML y PHP
