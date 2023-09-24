@@ -1,0 +1,12 @@
+
+.info{
+  background-image: url(https://img.freepik.com/foto-gratis/vista-superior-alimentos-accesorios-mascotas_23-2148949562.jpg?w=996&t=st=1684025498~exp=1684026098~hmac=9605557feddeaa468c1e888a49617a61390dd0989bc3413ee9da16e9280903ca);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+@media  (max-width: 760px){
+  .info{
+    background-image: url(../images/img2.jpg);
+  };
+  
+};
