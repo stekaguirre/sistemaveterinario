@@ -71,6 +71,7 @@ include ('../app/config.php');
                 <a href="<?php echo $URL;?>/index.html" class="btn btn-secondary" style="width: 100%">Cancelar</a>
             </form>
             <p>si ya estas registrado puedes <a href="<?php echo $URL;?>/login">Iniciar de secion</a> </p>
+            <p>Volver a la pagina principal <a href="<?php echo $URL;?>/index.html">Inicio</a></p>
             
 
             <!-- /.social-auth-links -->

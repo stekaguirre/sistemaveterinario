@@ -28,7 +28,7 @@ include ('../app/config.php');
             </center>
             <p class="login-box-msg">Ingresar a la <?php echo APP_NAME; ?></p>
 
-            <form action="<?php echo $URL;?>/app/controllers/login/controller_login.php" method="post">
+            <form action="<?php echo $URL;?>/app/controllers/login/ingreso.php" method="post">
                 <label for="">Correo electronico</label>
                 <div class="input-group mb-3">
                     <input type="email" name="email" class="form-control" placeholder="Email">
@@ -51,7 +51,8 @@ include ('../app/config.php');
                 <br><br>
                 <a href="<?php echo $URL;?>/index.html" class="btn btn-secondary" style="width: 100%">Cancelar</a>
             </form>
-            <p>si aun no estas registrado <a href="<?php echo $URL;?>/login/registro.php">registrate</a> </p>
+            <p>Si aun no estas registrado <a href="<?php echo $URL;?>/login/registro.php">Registrate</a></p>
+            <p>Volver a la pagina principal <a href="<?php echo $URL;?>/index.html">Inicio</a></p>
             
 
             <!-- /.social-auth-links -->
