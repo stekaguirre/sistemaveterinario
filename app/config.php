@@ -1,9 +1,15 @@
 <?php
 
+define ('APP_NAME','Veterinaria Pet Cat - ServiciosDisponibles');
 define('SERVIDOR','localhost');
 define('USUARIO','root');
 define('PASSWORD','');
 define('BD','sistemaveterinario');
+
+$URL = "http://localhost/sistemaveterinario";
+
+date_default_timezone_set("America/Bogota");
+$fechaHora = date('Y-m-d H:i:s');
 
 $servidor = "mysql:dbname=".BD.";host=".SERVIDOR;
 
@@ -15,11 +21,5 @@ try{
     echo "Error al conectar a la base de datos";
 }
 
-$URL = "http://localhost/sistemaveterinario";
-
-define ('APP_NAME','Veterinaria Pet Cat - ServiciosDisponibles');
-
-date_default_timezone_set("America/Bogota");
-$fechaHora = date('Y-m-d H:i:s');
 
 ?>
