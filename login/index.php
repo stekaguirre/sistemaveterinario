@@ -54,12 +54,10 @@ include ('../app/config.php');
             <p>Si aun no estas registrado <a href="<?php echo $URL;?>/login/registro.php">Registrate</a></p>
             <p>Volver a la pagina principal <a href="<?php echo $URL;?>/index.html">Inicio</a></p>
             
-
-            <!-- /.social-auth-links -->
-
         </div>
         <!-- /.login-card-body -->
     </div>
+    <br><br>
 </div>
 <!-- /.login-box -->
 
