@@ -1,6 +1,6 @@
 <?php
 
-define ('APP_NAME','Veterinaria Pet Cat - ServiciosDisponibles');
+define ('APP_NAME','Veterinaria Pet Cat');
 define('SERVIDOR','localhost');
 define('USUARIO','root');
 define('PASSWORD','');

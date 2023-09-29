@@ -17,11 +17,35 @@ include ('../app/config.php');
     <link rel="stylesheet" href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+
+    <!-- Libreria Sweetallert2-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
-    <div class="card">
-        <div class="card-body login-card-body">
+    <!-- /.login-logo -->
+
+    <?php
+    session_start();
+    
+    if(isset($_SESSION['mensaje'])){
+        $respuesta = $_SESSION['mensaje'];?>
+
+        <script>
+                Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: '<?php echo $respuesta ?>',
+                showConfirmButton: false,
+                timer: 1500
+                })
+        </script>
+
+        <?php
+            }
+
+            ?>
+
             <center>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhjBJW0N21rfhqhetJyTEVNSHXnDiogTgZUTfV26Dz84RsrTrHduuN-ttb8hg-MgGCbs&usqp=CAU" 
                 width="50%" alt="">
