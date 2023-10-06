@@ -25,26 +25,29 @@ include ('../app/config.php');
 <div class="login-box">
     <!-- /.login-logo -->
 
-    <?php
-    session_start();
-    
-    if(isset($_SESSION['mensaje'])){
-        $respuesta = $_SESSION['mensaje'];?>
+<!-- MENSAJE SWEETALERT -->
+ <?php
+        session_start();
+        
+        if(isset($_SESSION['mensaje'])){
+            $respuesta = $_SESSION['mensaje'];?>
 
-        <script>
-                Swal.fire({
+            <script>
+                    Swal.fire({
                 position: 'top-end',
                 icon: 'error',
                 title: '<?php echo $respuesta ?>',
                 showConfirmButton: false,
                 timer: 1500
                 })
-        </script>
+            </script>
 
-        <?php
+            <?php
+            unset($_SESSION['mensaje']);
             }
 
             ?>
+<!--/// MENSAJE SWEETALERT -->
 
             <center>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhjBJW0N21rfhqhetJyTEVNSHXnDiogTgZUTfV26Dz84RsrTrHduuN-ttb8hg-MgGCbs&usqp=CAU" 
