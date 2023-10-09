@@ -21,41 +21,42 @@
     </head>
   <!-- ////HEAD -->
   <!-- BODY -->
-    <body class="hold-transition sidebar-mini">
-    <!-- wrapper --> 
-            <div class="wrapper">
-            <!-- MENU DE NAVEGACION DERECHA -->
-                <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-                <!-- CABEZERA DERECHA TITULO -->
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" data-widget="pushmenu" 
-                        href="#" role="button"><i class="fas fa-bars"></i></a>
-                    </li>
-                    <li class="nav-item d-none d-sm-inline-block">
-                        <h2><?php echo APP_NAME; ?></h2>
-                    </li>
-                    </ul>
-                <!-- ///CABEZERA DERECHA TITULO -->
-
-                <!-- CABEZERA DERECHA LINK -->
-                    <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" data-widget="fullscreen" 
-                        href="#" role="button">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" 
-                        href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                        </a>
-                    </li>
-                    </ul>
-                <!-- ////CABEZERA DERECHA LINK -->  
-                </nav>
-            <!-- //// MENU DE NAVEGACION DERECHA-->
+    <body class="hold-transition sidebar-mini"> 
+<!-- wrapper --> 
+    <div class="wrapper">
+    <!-- Navbar - MENU DE NAVEGACION PRINCIPAL -->
+                      
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links - MENU DE NAVEGACION PRINCIPAL LADO IZQUIERDO LINKS -->
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" 
+            href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-sm-inline-block">
+            <a href="http://localhost/sistemaveterinario/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-sm-inline-block">
+            <a href="http://localhost/sistemaveterinario/admin" class="nav-link">Admin</a>
+        </li>
+        <li class="nav-item d-sm-inline-block">
+            <a href="http://localhost/sistemaveterinario/usuarios" 
+            class="nav-link">Usuarios</a>
+        </li>
+        </ul>
+    <!-- Right navbar links - MENU DE NAVEGACION PRINCIPAL LADO DERECHO LINKS -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="http://localhost/sistemaveterinario/login/" class="nav-link">Ingresar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+<!-- ////.navbar - MENU DE NAVEGACION PRINCIPAL-->
 
             <!-- MENU DE NAVEGACION IZQUIERDA -->
                 <aside class="main-sidebar sidebar-dark-primary elevation-4">
