@@ -16,8 +16,14 @@
       <!-- Theme style -->
       <link rel="stylesheet" 
       href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+      <!-- ICONOS DE BOOTSTRAP -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
       <!-- LIBRERIA DE SWEETALERT -->
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- DataTables -->
+      <link rel="stylesheet" href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+      <link rel="stylesheet" href="<?php echo $URL;?>/public/templeates/AdminLTE-3.2.0/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     </head>
   <!-- ////HEAD -->
   <!-- BODY -->
