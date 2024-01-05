@@ -1,5 +1,5 @@
 <?php
-include ('../app/config.php');
+include ("../app/config.php")
 ?>
 
 <!DOCTYPE html>
@@ -23,40 +23,17 @@ include ('../app/config.php');
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
-    <!-- /.login-logo -->
-
-<!-- MENSAJE SWEETALERT -->
- <?php
-        session_start();
-        
-        if(isset($_SESSION['mensaje'])){
-            $respuesta = $_SESSION['mensaje'];?>
-
-            <script>
-                    Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: '<?php echo $respuesta ?>',
-                showConfirmButton: false,
-                timer: 1500
-                })
-            </script>
-
-            <?php
-            unset($_SESSION['mensaje']);
-            }
-
-            ?>
-<!--/// MENSAJE SWEETALERT -->
-
+        <div class="card-header text-center">
+            <a href="index.html" class="h1"><b>Sistema de ventas</b></a>
+        </div>
+        <div class="card card-outline card-primary">
             <center>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhjBJW0N21rfhqhetJyTEVNSHXnDiogTgZUTfV26Dz84RsrTrHduuN-ttb8hg-MgGCbs&usqp=CAU" 
-                width="50%" alt="">
+                <img src="<?php echo $URL;?>/public/images/logotienda.png"
+                alt="logotienda" width="100px">
             </center>
-            <p class="login-box-msg">Ingresar a la <?php echo APP_NAME; ?></p>
-
+        <div class="card-body">
+            <p class="login-box-msg"><b>Ingreso a el sistema</b></p>
             <form action="<?php echo $URL;?>/app/controllers/login/ingreso.php" method="post">
-                <label for="">Correo electronico</label>
                 <div class="input-group mb-3">
                     <input type="email" name="email" class="form-control" placeholder="Email">
                     <div class="input-group-append">
@@ -65,26 +42,36 @@ include ('../app/config.php');
                         </div>
                     </div>
                 </div>
-                <label for="">Contraseña</label>
                 <div class="input-group mb-3">
-                    <input type="password" name="password_user" class="form-control" placeholder="Password">
+                    <input type="password" name="password_user" class="form-control" placeholder="Contraseña">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%">Ingresar</button>
-                <br><br>
-                <a href="<?php echo $URL;?>/index.html" class="btn btn-secondary" style="width: 100%">Cancelar</a>
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <hr>
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col-12">
+                        <p>Si aun no te has registrado ??</p>
+                        <a href="<?php echo $URL;?>/login/registro.php" class="btn btn-secondary btn-block">Registrarse</a>
+                    </div>
+                    <!-- /.col -->
+                </div>
             </form>
-            <p>Si aun no estas registrado <a href="<?php echo $URL;?>/login/registro.php">Registrate</a></p>
-            <p>Volver a la pagina principal <a href="<?php echo $URL;?>/index.html">Inicio</a></p>
-            
+
         </div>
-        <!-- /.login-card-body -->
+        <!-- /.card-body -->
     </div>
-    <br><br>
+    <!-- /.card -->
 </div>
 <!-- /.login-box -->
 
